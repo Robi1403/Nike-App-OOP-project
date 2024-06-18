@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProductItemView">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/headerbar"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="21dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/backbutton"
+            />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:src="@drawable/nikecheck" />
+
+        <Button
+            android:id="@+id/bagBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/bagblack"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="#F6f6f6">
+
+            <ImageView
+                android:id="@+id/productViewImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/container"
+                android:padding="30dp">
+                <TextView
+                    android:id="@+id/productViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Force 1"
+                    android:textSize="28dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/productViewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱5,495"
+                    android:textColor="#6E6E6E"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/StocksLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stock Available: 5"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/productViewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Size"
+                    android:textSize="12dp"
+                    android:textColor="#6E6E6E"
+                    android:layout_gravity="left"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/sizeBtnSize6"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:text="US 6"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+                    <Button
+                        android:id="@+id/sizeBtnSize65"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:layout_marginRight="5dp"
+                        android:text="US 6.5"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"
+                        />
+
+
+                    <Button
+                        android:id="@+id/sizeBtnSize7"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:layout_marginRight="5dp"
+                        android:text="US 7"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+
+                    <Button
+                        android:id="@+id/sizeBtnSize75"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:text="US 7.5"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/sizeBtnSize8"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:text="US 8"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+                    <Button
+                        android:id="@+id/sizeBtnSize85"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:layout_marginRight="5dp"
+                        android:text="US 8.5"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+
+
+                    <Button
+                        android:id="@+id/sizeBtnSize9"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:layout_marginRight="5dp"
+                        android:text="US 9"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+
+                    <Button
+                        android:id="@+id/sizeBtnSize95"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:text="US 9.5"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/sizeBtnSize10"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:text="US 10"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+                    <Button
+                        android:id="@+id/sizeBtnSize105"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:layout_marginRight="5dp"
+                        android:text="US 10.5"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+
+
+                    <Button
+                        android:id="@+id/sizeBtnSize11"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:layout_marginRight="5dp"
+                        android:text="US 11"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+
+                    <Button
+                        android:id="@+id/sizeBtnSize115"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bbutton"
+                        android:text="US 11.5"
+                        android:textSize="12dp"
+                        android:padding="0dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
+
+        <Button
+            android:id="@+id/addToBagBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/roundbutton"
+            android:text="Add to Bag"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Pressed state background image -->
+            <item android:drawable="@drawable/blackbutton" />
+            <!-- Text color for pressed state -->
+            <color android:color="#FFFFFFFF" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <!-- Default state background image -->
+            <item android:drawable="@drawable/bbutton" />
+            <!-- Text color for default state -->
+            <color android:color="@color/black" />
+        </layer-list>
+    </item>
+</selector>
